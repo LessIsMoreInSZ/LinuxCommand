@@ -4,24 +4,22 @@ Some command line commands in Linux
 
 sudo vim /etc/apt/sources.list
 
-# apt-get update
-# apt-get upgrade
-# apt-get install <packagename>
-apt get install aptitude 
+ apt-get update
+ apt-get upgrade apt-get install <packagename>
+ apt get install aptitude 
 
-共享剪贴板
+#共享剪贴板
 sudo apt update # 首先要更新，保证apt库是最新的
 sudo apt install open-vm-tools
 sudo apt install open-vm-tools-desktop
 vmware-user # 直接运行即可，open-vm-tools给你内置了
-https://blog.csdn.net/Hatsune__Miku___/article/details/136501374
 
 
 sudo  cp   /etc/apt/sources.list   /etc/apt/sources.list.bak
 
 sudo vim /etc/apt/sources.list
 
-# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+```# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-updates main restricted universe multiverse
@@ -34,6 +32,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-security main restricted
 # 预发布软件源，不建议启用
 # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
+```
 
 
 --我的配置--
@@ -144,4 +143,3 @@ sudo apt-get install openssh-client=1:8.2p1-4
 安装完对应版本的openssh-clien后再执行：
 
 sudo apt-get install openssh-server
-https://blog.csdn.net/weixin_44577224/article/details/131344269
