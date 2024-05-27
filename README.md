@@ -37,7 +37,8 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-security main restricted
 ```
 
 
---我的配置--
+--我的配置--(这边建议使用阿里云源,我清华源down失败，阿里云源成功，不知道是不是跟距离有关系。。。)
+```
 deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
  
@@ -50,7 +51,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe
 deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
-
+```
 
 
 在Ubuntu系统上安装Docker，可以按照以下步骤操作：
@@ -93,8 +94,7 @@ sudo docker run hello-world
 
 
 ------------------安装ssh服务-----------------------
-在Ubuntu上安装SSH服务，您可以按照以下步骤操作：
-
+```
 更新包列表：
 
 sudo apt update
@@ -131,9 +131,9 @@ ssh [username]@[server-ip-address]
 
 sudo apt install aptitude 
 
-
-解决方法
-
+```
+安装ssh的时候可能会报错依赖版本对不上，可能是因为ubuntu自带的openssh-clien与所要安装的openssh-server所依赖的版本不同
+解决方法:
 
 这是因为,openssh-server是依赖于openssh-clien的,ubuntu自带的openssh-clien与所要安装的openssh-server所依赖的版本不同,这里所依赖的版本是 1:8.2p1-4
 
