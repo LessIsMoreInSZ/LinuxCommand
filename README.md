@@ -2,22 +2,24 @@
 
 Some command line commands in Linux
 
-sudo vim /etc/apt/sources.list
 
  apt-get update
  apt-get upgrade apt-get install <packagename>
  apt get install aptitude 
 
-#共享剪贴板
+```#共享剪贴板
 sudo apt update # 首先要更新，保证apt库是最新的
 sudo apt install open-vm-tools
 sudo apt install open-vm-tools-desktop
 vmware-user # 直接运行即可，open-vm-tools给你内置了
+```
 
+sudo vim /etc/apt/sources.list
 
 sudo  cp   /etc/apt/sources.list   /etc/apt/sources.list.bak
 
 sudo vim /etc/apt/sources.list
+建议使用 sudo gedit /etc/apt/sources.list
 
 ```# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy main restricted universe multiverse
