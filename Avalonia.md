@@ -18,6 +18,11 @@ $HOME-- 一般就是路径 /home/用户名/
                         
 原文链接：https://blog.csdn.net/rotion135/article/details/137132432
 
-![alt text](1722519310295.jpg)
+![alt text](/images/Avalonia-1.jpg)
 
-![alt text](1722519349858.jpg)
+![alt text](/images/Avalonia-2.jpg)
+
+
+
+![alt text](/images/Avalonia-3.jpg)
+
