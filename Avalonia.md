@@ -26,3 +26,10 @@ $HOME-- 一般就是路径 /home/用户名/
 
 ![alt text](/images/Avalonia-3.jpg)
 
+结尾加上：
+
+export DOTNET_ROOT=$HOME/.dotnet
+
+此变量应同时包含 DOTNET_ROOT 文件夹和 DOTNET_ROOT/tools 文件夹：
+
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
